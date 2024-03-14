@@ -1,10 +1,6 @@
-const person = {
+var person = {
     name: "John",
-    age: 30,
-    city: "New York"
+    today: new Date()
   };
   
-  let myString = JSON.stringify(person);
-
-  
-  document.getElementById("demo").innerHTML = myString;
+  document.getElementById("demo").innerHTML = JSON.stringify(person);
