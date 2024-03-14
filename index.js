@@ -3,10 +3,8 @@ const person = {
     age: 30,
     city: "New York"
   };
+  
+  let myString = JSON.stringify(person);
 
- let txt = " ";
-  for(let x in person) {
-txt += person[x] + " ";
-  }
-
-  document.getElementById("demo").innerHTML = txt;
+  
+  document.getElementById("demo").innerHTML = myString;
