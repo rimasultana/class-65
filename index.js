@@ -4,4 +4,9 @@ const person = {
     city: "New York"
   };
 
-  document.getElementById("demo").innerHTML = person.name + " , " + person.age;
+ let txt = " ";
+  for(let x in person) {
+txt += person[x] + " ";
+  }
+
+  document.getElementById("demo").innerHTML = txt;
